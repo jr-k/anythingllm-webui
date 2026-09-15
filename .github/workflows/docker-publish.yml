@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - master
-    tags:
-      - "v*"
+    paths:
+      - 'version.txt'
+      - 'enforce.txt'
   workflow_dispatch:
 
 env:
